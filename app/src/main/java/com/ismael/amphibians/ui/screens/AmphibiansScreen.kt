@@ -62,7 +62,8 @@ fun AmphibianApp(){
                viewModel(factory = AmphibianViewModel.Factory)
 
             AmphibianHomeScreen(
-                amphibianUiState = amphibianViewModel.amphibianUiState
+                amphibianUiState = amphibianViewModel.amphibianUiState,
+                modifier = Modifier.padding(top = 50.dp)
             )
 
         }
